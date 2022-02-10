@@ -1,0 +1,64 @@
+"use sсtrict"; /* показываем файлу что мы работаем в современном режиме */
+
+let number = 5;  /* создали коробочку, назвали ее и положили число 5 (let-изменяемая переменная)*/
+const leftBorderWidth = 1; /* объявление переменной, называем ее и ложим значение (const- не изменяемая переменная) */
+
+number = 10;
+console.log(number); /* команда выводит информацию */
+
+
+
+let number = 4.6; /* числовой тип*/
+
+console.log(-4/0); 
+console.log('string' * 9);
+
+const persone = "Alex"; /*Текстовый тип*/
+
+const bool = false; /*логический тип тру или фолс*/
+
+console.log(something); /* null, показывает ошибку*/
+
+let und; /*undefind- когда пытаемся достать с коробки то чего нет*/
+console.log(und);
+
+const obj = { /* объект со свойствами и методами*/
+name: "John",
+age: 25,
+isMarried: false
+};
+
+console.log(obj.name) /*обращаемся к определенному свойству объекта*/
+
+let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp']; /*массив это частный случай объекта хранения данных, которые идут строго по порядку (записываем картинки по поядку)*/
+console.log(arr[1]);
+
+
+// alert("Hello world!"); /*предупреждение для пользователя*/
+
+//const result = confirm("Are you here?"); /*спросить пользователя и получить ответ да или нет*/
+//console.log(result);
+
+//const answer = prompt("Вам есть 18?", "18"); /*позволяетзадать вопрос и варианты ответов*/
+//console.log(typeof(answer)); /*typeof позволяет увидеть какие данные введены (строка)*/
+
+const answers = [];
+
+answers[0] = prompt("Как ваше имя?", "");
+answers[1] = prompt("Как ваша фамилия?", "");
+answers[2] = prompt("Сколько вам лет?", "");
+
+//document.write(answers);
+
+console.log(typeof(answers));
+
+
+
+const category = "toys";
+
+//console.log("https://someurl.com/" + category); /*приклееваем к пути кусок строкки toys*/
+console.log(`https://someurl.com/${category}/5`); /*интерполяция*/
+
+const user = "Igor";
+
+alert(`Привет, ${user}`);
