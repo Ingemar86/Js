@@ -127,3 +127,90 @@ for (let i = 1; i < 10; i++){
     }
     console.log(i);    
 }
+
+"use strict";
+// Функции
+function showFirstMessage(text) {
+    console.log(text);
+}
+
+showFirstMessage("Hello world!");
+
+let num = 20; //глобальная переменная
+
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10; //локальная переменная
+    console.log(num);
+}
+
+showFirstMessage("Hello world!");
+console.log(num);
+
+//функция return
+function calc(a, b) {
+    return (a + b);
+}
+
+console.log(calc(4, 3));
+console.log(calc(5, 6));
+console.log(calc(10, 6));
+
+// другой метод функции return
+function ret() {
+    let num = 50;
+    //
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+//второй тип функция Expression
+const logger = function() {
+    console.log("Hello");
+}
+logger();
+
+// стрелочные функции
+
+const calc = (a, b) => { 
+    console.log("1");
+    return a + b;
+    };
+console.log();
+
+
+const str = "teSt";
+const arr = [1, 2, 4];
+
+console.log(str.length);
+console.log(arr.length);
+
+console.log(str [2]);
+
+console.log(str.toUpperCase());
+
+console.log(str.toLowerCase());
+//
+let fruit = "Some fruit";
+
+console.log(fruit.indexOf("fruit"));
+console.log(fruit.indexOf("q"));
+
+//методы взаимодействия со строками
+const logg = "Hello world";
+
+console.log(logg.slice(6, 11)); //вырезает кусочки, нумирация с 0
+console.log(logg.slice(6));
+console.log(logg.slice(-5, -1));
+console.log(logg.substring(6, 11));
+console.log(logg.substr(6,5));
+
+// взаиможействие с числами
+const num = 12.2;
+console.log(Math.round(num)); //округляет
+
+const test = "12.2px";
+console.log(parseInt(test)); //превращает в другую систему исчисления
+console.log(parseFloat(test));
